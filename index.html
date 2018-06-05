@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			.banner{
+				width: 750px;
+				height: 398px;
+				margin: 100px auto;
+			}
+			
+			body{
+				overflow: hidden;
+			}
+		</style>
+		<link rel="stylesheet" href="bomb.css" />
+	</head>
+	<body>
+		<div class="banner">
+			<ul>
+				<li><a href="#"><img src="images/banner/banner1.jpg"/></a></li>
+				<li><a href="#"><img src="images/banner/banner2.jpg"/></a></li>
+				<li><a href="#"><img src="images/banner/banner3.jpg"/></a></li>
+				<li><a href="#"><img src="images/banner/banner4.jpg"/></a></li>
+				<li><a href="#"><img src="images/banner/banner5.jpg"/></a></li>
+				
+			</ul>
+		</div>
+		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="jquery-bomb.min.js"></script>
+		<script type="text/javascript">
+			$(function(){	
+				$('.banner').bomb({
+					col: 7, //最小不要小于2，小于2之后会默认显示2 最大不要超过10
+					row: 4 //最小不要小于2，小于2之后会默认显示2 最大不要超过10
+				});
+			})
+		</script>
+		
+		
+	</body>
+</html>
